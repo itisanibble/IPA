@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="stylesheet" type="text/css" href="public/dist/css/min/bootstrap.min.css">
+  <link rel="stylesheet" type="text/css" href="public/dist/css/min/normalize.min.css">
+  <link rel="stylesheet" type="text/css" href="public/dist/css/min/style.min.css">
+
+  <title class="page-title"></title>
+</head>
+
+<body class="bg-dark text-light vh-100 position-relative container">
+
+  <header>
+    <h1 class="text-success mt-0 pt-3">IPA</h1>
+  </header>
+
+  <main class="container">
+
+    <div class="row ">
+
+      <div class="col-md-6 form-floating">
+        <textarea class="words form-control bg-dark text-info " placeholder="Write here"></textarea>
+        <label for="words" class="label-words-area mx-3">Write here !</label>
+      </div>
+
+      <div class="col-md-6 my-2 my-md-0">
+        <textarea class="translation form-control bg-dark text-light " placeholder="Translation" readonly></textarea>
+      </div>
+
+
+    </div>
+    <div class="btn-search btn btn-outline-success float-end mt-2">Search</div>
+    <div class="btn-clean btn btn-outline-danger float-end m-2">Clean</div>
+    </div>
+  </main>
+
+  <div class="alerts position-absolute start-0 bottom-0 w-100">
+    <div class="container-fluid">
+      <div class="alert alert-warning alert-dismissible fade show">
+        <button type="button" class="btn-close" data-bs-dismiss="alert"></button>
+        <strong>Note:</strong> beta version, word for word translation only, no sentences. Please only letters
+      </div>
+    </div>
+  </div>
+
+
+  <div class="scripts">
+    <script src="public/dist/js/bootstrap.min.js"></script>
+    <script src="public/dist/js/helpers/selector.js"></script>
+    <script src="public/dist/js/app.js"></script>
+
+  </div>
+</body>
+
+</html>
